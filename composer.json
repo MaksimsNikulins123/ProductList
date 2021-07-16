@@ -1,0 +1,20 @@
+{
+    "name": "htdocks/formphpoop",
+    "description": "project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MaksimsNikulins123",
+            "email": "51087034+MaksimsNikulins123@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "liw\\": "" 
+        }
+    }
+    
+}
