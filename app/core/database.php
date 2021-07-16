@@ -27,7 +27,6 @@ class Database
     
     public function write($sku, $name, $price, $type, $size, $weight, $height, $width, $length)
     {
-        // var_dump($sku, $name, $price, $type, $size, $weight, $height, $width, $length);
         
         $query = "INSERT INTO `products`(`id`, `sku`, `name`, `price`, `type`, `size`, `weight`, `height`, `width`, `length`) VALUES (null,'$sku','$name','$price','$type','$size','$weight','$height','$width','$length')";
         $addProducts = mysqli_query($this->db_connect(), $query);
@@ -40,9 +39,7 @@ class Database
 
     public function delete($data)
     {
-        // print_r($data) ;
-        // foreach($data as $id)
-        // echo ($data);
+       
         $query = "DELETE FROM `products` WHERE id IN ($data)";
         $deleteProducts = mysqli_query($this->db_connect(), $query);
         if(!$addProducts){

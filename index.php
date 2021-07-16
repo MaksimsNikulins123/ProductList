@@ -5,24 +5,9 @@ session_start();
 require __DIR__ . "/vendor/autoload.php";
 require "app/init.php";
 
-
-// $app = new liw\app\core\App();
-
-// $app->hi();
-
-// $adress_str = $_SERVER['REQUEST_URI']; 
-
-// var_dump($adress_str);
-// $data = $_POST;
-
-// var_dump($data);
-
 $db = new liw\app\core\Database();
 
 $products = $db->read();
-
-// $addProducts = $db->write();
-// var_dump(header('Location: http://www.example.com/'));
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +42,6 @@ $products = $db->read();
             <div class="products_list">
                 <?php                  
                 foreach($products as $product){
-                    // var_dump($product);
                     ?>
                     <div class="product">
                         <div class="product_checkbox">

@@ -6,9 +6,6 @@ require __DIR__ . "/vendor/autoload.php";
 require "app/init.php";
 
 header('Location: index.php');
-// $data = $_POST;
-
-// var_dump($data);
 
 $sku = '';
 $name = '';
@@ -40,12 +37,6 @@ if($_POST['width'] != null){
 if($_POST['length'] != null){
     $length = $_POST['length'];
 }
-
-
-
-
-
-// var_dump($weight);
 
 $db = new liw\app\core\Database();
 

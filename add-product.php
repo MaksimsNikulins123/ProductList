@@ -3,8 +3,6 @@ session_start();
 
 require __DIR__ . "/vendor/autoload.php";
 require "app/init.php";
-// header('Location: http://www.example.com/');
-// $app = new liw\app\core\App();
 ?>
 
 
@@ -25,11 +23,9 @@ require "app/init.php";
             <div class="header_buttons">
                 <div class="header_button">
                 <input type="submit" form="product_form" value="Save"/>
-                    <!-- <button>ADD</button> -->
                 </div>
                 <div class="header_button">
                 <input type="reset" form="product_form" onclick='cancel()' value="Cancel"/> 
-                    <!-- <button onClick="toggle(this)">MASS DELETE</button> -->
                 </div>
             </div>
         </div>
